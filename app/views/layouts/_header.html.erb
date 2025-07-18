@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "sample app", "#", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("navbar.home"), static_pages_home_path %></li>
+        <li><%= link_to t("navbar.help"), static_pages_help_path %></li>
+        <li><%= link_to t("navbar.contact"), static_pages_contact_path %></li>
+        <li><%= link_to t("navbar.microposts"), microposts_path %></li>
+        <li><%= link_to t("navbar.log_in"), "#" %></li>
+
+        <!-- Language switch -->
+        <li><%= link_to t("languages.en"), url_for(locale: :en) %></li>
+        <li><%= link_to t("languages.vi"), url_for(locale: :vi) %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
