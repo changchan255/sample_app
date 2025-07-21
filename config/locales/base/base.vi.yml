@@ -66,13 +66,6 @@ vi:
       destroy: "Xóa"
       confirm_destroy: "Bạn có chắc chắn muốn xóa?"
 
-  activerecord:
-    models:
-      product: "Sản phẩm"
-    attributes:
-      product:
-        name: "Tên sản phẩm"
-
   errors:
     template:
       header:
@@ -93,3 +86,14 @@ vi:
   demo_partials:
     zone_new: "Khu vực hành động Tạo mới"
     zone_edit: "Khu vực hành động Chỉnh sửa"
+
+  errors:
+    messages:
+      blank: "không được để trống"
+      too_long:
+        one: "quá dài (tối đa là 1 ký tự)"
+        other: "quá dài (tối đa là %{count} ký tự)"
+      too_short:
+        one: "quá ngắn (tối thiểu là 1 ký tự)"
+        other: "quá ngắn (tối thiểu là %{count} ký tự)"
+      confirmation: "không khớp với %{attribute}"
