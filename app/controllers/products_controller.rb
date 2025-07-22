@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
       if @product.save
         format.html do
           redirect_to product_url(@product),
-                      notice: t("products.created")
+                      notice: t(".created")
         end
         format.json{render :show, status: :created, location: @product}
       else
@@ -37,7 +37,7 @@ class ProductsController < ApplicationController
       if @product.update(product_params)
         format.html do
           redirect_to product_url(@product),
-                      notice: t("products.updated")
+                      notice: t(".updated")
         end
         format.json{render :show, status: :ok, location: @product}
       else
@@ -52,14 +52,14 @@ class ProductsController < ApplicationController
   def destroy
     if @product.destroy
       respond_to do |format|
-        format.html{redirect_to products_url, notice: t("products.destroyed")}
+        format.html{redirect_to products_url, notice: t(".destroyed")}
         format.json{head :no_content}
       end
     else
       respond_to do |format|
         format.html do
           redirect_to products_url,
-                      alert: t("products.not_destroyed")
+                      alert: t(".not_destroyed")
         end
         format.json do
           render json: @product.errors,
@@ -75,7 +75,7 @@ class ProductsController < ApplicationController
     @product = Product.find_by(id: params[:id])
     return if @product
 
-    flash[:alert] = t("products.not_found")
+    flash[:alert] = t(".not_found")
     redirect_to products_url
   end
 

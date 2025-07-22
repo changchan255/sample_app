@@ -10,6 +10,10 @@ vi:
     microposts: "Bài viết"
     sign_up: "Đăng ký"
     log_in: "Đăng nhập"
+    account: "Tài khoản"
+    profile: "Hồ sơ"
+    settings: "Cài đặt"
+    log_out: "Đăng xuất"
     language: "Ngôn ngữ"
   languages:
     en: "Tiếng Anh"
@@ -34,59 +38,11 @@ vi:
     title: "Liên hệ"
     greeting_html: "Xin chào %{name}"
 
-  microposts:
-    title: "Bài viết"
-    empty: "Chưa có bài viết nào"
-
-  products:
-    title: "Sản phẩm"
-    name: "Tên"
-    empty: "Không có sản phẩm nào"
-    new: "Tạo sản phẩm mới"
-
-    created: "Sản phẩm đã được tạo thành công."
-    updated: "Sản phẩm đã được cập nhật thành công."
-    destroyed: "Sản phẩm đã được xóa thành công."
-    not_destroyed: "Không thể xóa sản phẩm."
-    not_found: "Không tìm thấy sản phẩm."
-
-    edit_title: "Chỉnh sửa sản phẩm"
-    show_this: "Xem sản phẩm này"
-    back_to_list: "Quay lại danh sách"
-
-    new_title: "Sản phẩm mới"
-    back_to_list: "Quay lại danh sách"
-
-    edit: "Chỉnh sửa sản phẩm này"
-    back: "Quay lại danh sách sản phẩm"
-    destroy: "Xóa sản phẩm này"
-
-    actions:
-      show: "Xem"
-      edit: "Chỉnh sửa"
-      destroy: "Xóa"
-      confirm_destroy: "Bạn có chắc chắn muốn xóa?"
-
   errors:
     template:
       header:
         one: "Có 1 lỗi khiến %{model} không thể được lưu"
         other: "Có %{count} lỗi khiến %{model} không thể được lưu"
-
-  report:
-    zone: "Khu vực: %{zone}"
-    date: "Ngày: %{date}"
-
-  zone:
-    editing: "Chỉnh sửa khu vực"
-
-  zones:
-    title:
-      new: "Khu vực mới"
-
-  demo_partials:
-    zone_new: "Khu vực hành động Tạo mới"
-    zone_edit: "Khu vực hành động Chỉnh sửa"
 
   errors:
     messages:
@@ -105,17 +61,6 @@ vi:
       header:
         one: "Biểu mẫu chứa 1 lỗi"
         other: "Biểu mẫu chứa %{count} lỗi"
-
-  users:
-    not_found: "Không tìm thấy người dùng"
-    new:
-      title: "Đăng ký"
-      confirmation: "Xác nhận mật khẩu"
-      create_my_account: "Tạo tài khoản"
-    show:
-      created_at: "Được tạo lúc"
-      updated_at: "Được cập nhật lúc"
-    created: "Người dùng đã được tạo thành công."
 
   time:
     formats:
