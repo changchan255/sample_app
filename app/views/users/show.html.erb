@@ -5,8 +5,8 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
-        <p><strong><%= t("users.show.created_at") %>:</strong> <%= l(@user.created_at, format: :long) %></p>
-        <p><strong><%= t("users.show.updated_at") %>:</strong> <%= l(@user.updated_at, format: :long) %></p>
+        <p><strong><%= t(".created_at") %>:</strong> <%= l(@user.created_at, format: :long) %></p>
+        <p><strong><%= t(".updated_at") %>:</strong> <%= l(@user.updated_at, format: :long) %></p>
       </h1>
     </section>
   </aside>

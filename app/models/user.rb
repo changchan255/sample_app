@@ -23,6 +23,15 @@ class User < ApplicationRecord
 
   validate :birthday_within_100_years
 
+  def self.digest string
+    cost = if ActiveModel::SecurePassword.min_cost
+             BCrypt::Engine::MIN_COST
+           else
+             BCrypt::Engine.cost
+           end
+    BCrypt::Password.create string, cost:
+  end
+
   private
 
   def birthday_within_100_years

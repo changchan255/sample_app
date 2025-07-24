@@ -10,6 +10,10 @@ en:
     microposts: "Microposts"
     sign_up: "Sign up"
     log_in: "Log in"
+    account: "Account"
+    profile: "Profile"
+    settings: "Settings"
+    log_out: "Log out"
     language: "Language"
   languages:
     en: "English"
@@ -34,66 +38,6 @@ en:
     title: "Contact"
     greeting_html: "Hello %{name}"
 
-  microposts:
-    title: "Micropost"
-    empty: "No Microposts"
-
-  products:
-    title: "Products"
-    name: "Name"
-    empty: "No Products"
-    new: "New product"
-
-    created: "Product was successfully created."
-    updated: "Product was successfully updated."
-    destroyed: "Product was successfully destroyed."
-    not_destroyed: "Product could not be destroyed."
-    not_found: "Product not found."
-
-    edit_title: "Editing product"
-    show_this: "Show this product"
-    back_to_list: "Back to products"
-
-    new_title: "New product"
-    back_to_list: "Back to products"
-
-    edit: "Edit this product"
-    back: "Back to products"
-    destroy: "Destroy this product"
-    confirm_destroy: "Are you sure you want to delete this product?"
-
-    actions:
-      show: "Show"
-      edit: "Edit"
-      destroy: "Destroy"
-      confirm_destroy: "Are you sure?"
-
-    models:
-      product: "Product"
-    attributes:
-      product:
-        name: "Name"
-  errors:
-    template:
-      header:
-        one: "1 error prohibited this %{model} from being saved"
-        other: "%{count} errors prohibited this %{model} from being saved"
-
-  report:
-    zone: "Zone: %{zone}"
-    date: "Date: %{date}"
-
-  zone:
-    editing: "Editing zone"
-
-  zones:
-    title:
-      new: "New zone"
-
-  demo_partials:
-    zone_new: "Zone New action"
-    zone_edit: "Zone Edit action"
-
   errors:
     messages:
       blank: "can't be blank"
@@ -111,17 +55,6 @@ en:
       header:
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
-
-  users:
-    not_found: "User not found"
-    new:
-      title: "Sign up"
-      confirmation: "Password confirmation"
-      create_my_account: "Create my account"
-    show:
-      created_at: "Created at"
-      updated_at: "Updated at"
-    created: "User was successfully created."
 
   time:
     formats:

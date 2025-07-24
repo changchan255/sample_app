@@ -35,6 +35,10 @@ h1 {
   color: rgb(35, 95, 150);
 }
 
+.dropdown-menu.active {
+  display: block;
+}
+
 .error-message {
   color: red;
 }
