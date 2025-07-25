@@ -10,6 +10,7 @@ en:
     microposts: "Microposts"
     sign_up: "Sign up"
     log_in: "Log in"
+    users: "Users"
     account: "Account"
     profile: "Profile"
     settings: "Settings"

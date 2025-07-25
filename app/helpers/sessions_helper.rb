@@ -7,6 +7,10 @@ module SessionsHelper
     @current_user ||= find_user_from_session || find_user_from_cookies
   end
 
+  def current_user? user
+    user == current_user
+  end
+
   def logged_in?
     current_user.present?
   end
@@ -32,6 +36,10 @@ module SessionsHelper
   def remember_session user
     user.remember
     session[:session_token] = user.remember_token
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 
   private

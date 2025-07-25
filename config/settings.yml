@@ -7,6 +7,8 @@ user:
   max_email_length: 255
   hundred_years: 100
 
+page_10: 10
+
 development:
   <<: *defaults
 
