@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -13,6 +13,11 @@ class User < ApplicationRecord
     password_confirmation birthday gender
   ).freeze
 
+  PASSWORD_RESET_PERMITTED = %i(
+    password password_confirmation
+  ).freeze
+
+  PASSWORD_EXPIRATION_TIME = 2.hours
   enum gender: {female: 0, male: 1, other: 2}
 
   validates :name,
@@ -68,6 +73,20 @@ class User < ApplicationRecord
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < PASSWORD_EXPIRATION_TIME.ago
   end
 
   private
