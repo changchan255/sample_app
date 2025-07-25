@@ -22,3 +22,5 @@ vi:
             birthday:
               too_old: "phải nằm trong vòng 100 năm trở lại"
               in_future: "không được nằm trong tương lai"
+            password:
+              password_blank: "không được để trống nếu đã cung cấp xác nhận mật khẩu"

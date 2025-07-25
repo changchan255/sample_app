@@ -22,3 +22,5 @@ en:
             birthday:
               too_old: "must be within the last 100 years"
               in_future: "cannot be in the future"
+            password:
+              password_blank: "can't be blank if confirmation is provided"
