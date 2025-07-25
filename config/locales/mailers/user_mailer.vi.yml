@@ -6,3 +6,10 @@ vi:
       greeting: "Chào bạn %{name},"
       message: "Chào mừng bạn đến với Ứng dụng Mẫu! Hãy nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
       activate_link: "Kích hoạt tài khoản"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      title: "Đặt lại mật khẩu"
+      instruction: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết"
+      reset_password: "Đặt lại mật khẩu"
+      expire_notice: "Liên kết này sẽ hết hạn sau hai giờ."
+      ignore_notice: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này."
