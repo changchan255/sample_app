@@ -8,3 +8,4 @@ vi:
     create:
       login_success: "Đăng nhập thành công"
       invalid_email_or_password: "Email hoặc mật khẩu không hợp lệ"
+      account_not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để biết hướng dẫn kích hoạt."
