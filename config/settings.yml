@@ -1,7 +1,8 @@
 defaults: &defaults
-  help_page_url: "http://www.railstutorial.org/help"
-  book_url: "http://www.railstutorial.org/book"
-  edit_url: "http://gravatar.com/emails"
+help_page_url: "http://www.railstutorial.org/help"
+book_url: "http://www.railstutorial.org/book"
+edit_url: "http://gravatar.com/emails"
+mail_from: "noreply@example.com"
 
 user:
   max_name_length: 50

@@ -8,3 +8,4 @@ en:
     create:
       login_success: "Login successful"
       invalid_email_or_password: "Invalid email or password"
+      account_not_activated: "Account not activated. Please check your email for activation instructions."
