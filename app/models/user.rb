@@ -24,6 +24,9 @@ class User < ApplicationRecord
   validates :gender, presence: true
 
   validate :birthday_within_100_years
+  validate :password_presence_if_confirmation_provided
+
+  scope :newest, ->{order(created_at: :desc)}
 
   class << self
     def new_token
@@ -68,5 +71,11 @@ class User < ApplicationRecord
     elsif birthday > current_date
       errors.add(:birthday, :in_future)
     end
+  end
+
+  def password_presence_if_confirmation_provided
+    return unless password.blank? && password_confirmation.present?
+
+    errors.add(:password, :password_blank)
   end
 end

@@ -10,6 +10,7 @@ vi:
     microposts: "Bài viết"
     sign_up: "Đăng ký"
     log_in: "Đăng nhập"
+    users: "Người dùng"
     account: "Tài khoản"
     profile: "Hồ sơ"
     settings: "Cài đặt"

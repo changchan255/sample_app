@@ -2,8 +2,10 @@ vi:
   users:
     create:
       created: "Người dùng đã được tạo thành công."
-    load_user:
-      not_found: "Không tìm thấy người dùng"
+    not_found: "Không tìm thấy người dùng"
+    please_log_in: "Vui lòng đăng nhập để truy cập trang này."
+    cannot_edit: "Bạn không thể chỉnh sửa hồ sơ người dùng này."
+    not_admin: "Bạn không được phép thực hiện hành động này."
     new:
       title: "Đăng ký"
       confirmation: "Xác nhận mật khẩu"
@@ -11,3 +13,16 @@ vi:
     show:
       created_at: "Được tạo lúc"
       updated_at: "Được cập nhật lúc"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      save_changes: "Lưu thay đổi"
+      change_gravatar: "thay đổi"
+    update:
+      updated: "Hồ sơ đã được cập nhật thành công."
+    index:
+      title: "Tất cả người dùng"
+      delete: "xóa"
+      confirm_delete: "Bạn có chắc chắn muốn xóa người dùng này không?"
+    destroy:
+      deleted: "Người dùng đã được xóa thành công."
+      delete_failed: "Xóa người dùng không thành công."

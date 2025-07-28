@@ -2,8 +2,10 @@ en:
   users:
     create:
       created: "User was successfully created."
-    load_user:
-      not_found: "User not found"
+    not_found: "User not found"
+    please_log_in: "Please log in to access this page."
+    cannot_edit: "You cannot edit this user profile."
+    not_admin: "You are not authorized to perform this action."
     new:
       title: "Sign up"
       confirmation: "Password confirmation"
@@ -11,3 +13,16 @@ en:
     show:
       created_at: "Created at"
       updated_at: "Updated at"
+    edit:
+      title: "Edit user"
+      save_changes: "Save changes"
+      change_gravatar: "change"
+    update:
+      updated: "Profile was successfully updated."
+    index:
+      title: "All users"
+      delete: "delete"
+      confirm_delete: "Are you sure you want to delete this user?"
+    destroy:
+      deleted: "User was successfully deleted."
+      delete_failed: "User deletion failed."
