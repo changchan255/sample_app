@@ -25,6 +25,7 @@ vi:
     description_html: >
       Đây là trang chủ của ứng dụng mẫu %{link}.
     sign_up: "Đăng ký ngay!"
+    micropost_feed:  "Bảng tin"
 
   help:
     title: "Trợ giúp"
@@ -66,3 +67,56 @@ vi:
   time:
     formats:
       long: "%d/%m/%Y %H:%M"
+
+  user_info:
+    profile: "Xem hồ sơ của tôi"
+    micropost: "Bài viết"
+    micropost_singular: "bài viết"
+    micropost_plural: "bài viết"
+
+  micropost_form:
+    placeholder: "Soạn bài viết mới..."
+    submit: "Đăng"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "khoảng nửa phút"
+      less_than_x_seconds:
+        one: "ít hơn 1 giây"
+        other: "ít hơn %{count} giây"
+      x_seconds:
+        one: "1 giây"
+        other: "%{count} giây"
+      less_than_x_minutes:
+        one: "ít hơn 1 phút"
+        other: "ít hơn %{count} phút"
+      x_minutes:
+        one: "1 phút"
+        other: "%{count} phút"
+      about_x_hours:
+        one: "khoảng 1 giờ"
+        other: "khoảng %{count} giờ"
+      x_hours:
+        one: "1 giờ"
+        other: "%{count} giờ"
+      x_days:
+        one: "1 ngày"
+        other: "%{count} ngày"
+      about_x_months:
+        one: "khoảng 1 tháng"
+        other: "khoảng %{count} tháng"
+      x_months:
+        one: "1 tháng"
+        other: "%{count} tháng"
+      about_x_years:
+        one: "khoảng 1 năm"
+        other: "khoảng %{count} năm"
+      x_years:
+        one: "1 năm"
+        other: "%{count} năm"
+      over_x_years:
+        one: "hơn 1 năm"
+        other: "hơn %{count} năm"
+      almost_x_years:
+        one: "gần 1 năm"
+        other: "gần %{count} năm"

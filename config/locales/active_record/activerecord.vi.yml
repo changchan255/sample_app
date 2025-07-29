@@ -14,6 +14,9 @@ vi:
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
         gender: "Giới tính"
+      micropost:
+        content: "Nội dung"
+        image: "Hình ảnh"
 
     errors:
       models:
@@ -24,3 +27,8 @@ vi:
               in_future: "không được nằm trong tương lai"
             password:
               password_blank: "không được để trống nếu đã cung cấp xác nhận mật khẩu"
+        micropost:
+          attributes:
+            image:
+              invalid_image_type: "phải là định dạng hình ảnh hợp lệ"
+              image_too_large: "phải nhỏ hơn 5MB"

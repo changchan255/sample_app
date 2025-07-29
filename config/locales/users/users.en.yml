@@ -14,6 +14,7 @@ en:
     show:
       created_at: "Created at"
       updated_at: "Updated at"
+      microposts_title: "Microposts (%{count})"
     edit:
       title: "Edit user"
       save_changes: "Save changes"

@@ -54,7 +54,10 @@ gem "pagy"
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
-# gem "image_processing", "~> 1.2"
+gem "active_storage_validations", "0.9.8"
+gem "image_processing", "~> 1.12.2"
+
+gem "i18n-js", "3.9.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
