@@ -78,6 +78,10 @@ vi:
     placeholder: "Soạn bài viết mới..."
     submit: "Đăng"
 
+  stats:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+
   datetime:
     distance_in_words:
       half_a_minute: "khoảng nửa phút"

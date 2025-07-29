@@ -28,3 +28,8 @@ en:
     destroy:
       deleted: "User was successfully deleted."
       delete_failed: "User deletion failed."
+    follow: "Follow"
+    unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts: "
+      view_my_profile: "View my profile"
