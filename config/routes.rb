@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     resources :users
     resources :account_activations, only: %i(edit)
     resources :password_resets, only: %i(new create edit update)
-    resources :microposts, only: %i(index)
+    resources :microposts, only: %i(index create destroy)
     resources :products
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

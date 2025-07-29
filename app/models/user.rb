@@ -36,6 +36,8 @@ class User < ApplicationRecord
 
   scope :newest, ->{order(created_at: :desc)}
 
+  has_many :microposts, dependent: :destroy
+
   class << self
     def new_token
       SecureRandom.urlsafe_base64
@@ -89,6 +91,9 @@ class User < ApplicationRecord
     reset_sent_at < PASSWORD_EXPIRATION_TIME.ago
   end
 
+  def feed
+    microposts.order(created_at: :desc)
+  end
   private
 
   def downcase_email

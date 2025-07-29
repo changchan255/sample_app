@@ -25,6 +25,7 @@ en:
     description_html: >
       This is the home page for the %{link} sample application.
     sign_up: "Sign up now!"
+    micropost_feed:  "Micropost Feed"
 
   help:
     title: "Help"
@@ -60,3 +61,13 @@ en:
   time:
     formats:
       long: "%m/%d/%Y %H:%M"
+
+  user_info:
+    profile: "View my profile"
+    micropost: "Micropost"
+    micropost_singular: "micropost"
+    micropost_plural: "microposts"
+
+  micropost_form:
+    placeholder: "Compose new micropost..."
+    submit: "Submit"
