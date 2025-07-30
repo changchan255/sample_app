@@ -5,6 +5,8 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 .env
+# Ignore uploaded test images.
+/storage
 
 # Ignore bundler config.
 /.bundle

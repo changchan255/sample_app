@@ -14,6 +14,9 @@ en:
         password: "Password"
         password_confirmation: "Password confirmation"
         gender: "Gender"
+      micropost:
+        content: "Content"
+        image: "Image"
 
     errors:
       models:
@@ -24,3 +27,8 @@ en:
               in_future: "cannot be in the future"
             password:
               password_blank: "can't be blank if confirmation is provided"
+        micropost:
+          attributes:
+            image:
+              invalid_image_type: "must be a valid image format"
+              image_too_large: "must be less than 5MB"

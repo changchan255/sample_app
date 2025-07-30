@@ -5,7 +5,9 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
 
   # GET /users/:id
-  def show; end
+  def show
+    @page, @microposts = pagy @user.microposts, items: Settings.page_10
+  end
 
   def index
     @pagy, @users = pagy User.newest, items: Settings.page_10
@@ -52,14 +54,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t(".please_log_in")
-    redirect_to login_url
-  end
 
   def correct_user
     return if current_user? @user

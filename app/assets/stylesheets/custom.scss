@@ -1,5 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'microposts';
 
 /* universal */
 body {
@@ -85,6 +86,11 @@ h1 {
 
 /* sidebar */
 aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
   section.user_info {
     margin-top: 20px;
   }
@@ -103,6 +109,14 @@ aside {
       margin-bottom: 3px;
       line-height: 1;
     }
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+
+  input {
+    border: 0;
   }
 }
 

@@ -11,6 +11,10 @@ user:
 
 page_10: 10
 
+digit_140: 140
+
+allowed_image_types: "image/jpeg,image/gif,image/png"
+
 development:
   <<: *defaults
 

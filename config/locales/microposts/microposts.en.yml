@@ -3,3 +3,13 @@ en:
     index:
       title: "Micropost"
       empty: "No Microposts"
+    create:
+      created: "Micropost was successfully created."
+    destroy:
+      deleted: "Micropost was successfully deleted."
+      delete_failed: "Micropost deletion failed."
+    posted: "Posted %{time_ago} ago"
+    invalid: "Micropost is invalid."
+    image_too_large: "Maximum file size is 5MB. Please choose a smaller file."
+    delete: "delete"
+    delete_confirm: "Are you sure you want to delete this micropost?"

@@ -3,3 +3,13 @@ vi:
     index:
       title: "Bài viết"
       empty: "Chưa có bài viết nào"
+    create:
+      created: "Bài viết đã được tạo thành công."
+    destroy:
+      deleted: "Bài viết đã được xóa thành công."
+      delete_failed: "Xóa bài viết không thành công."
+    posted: "Đã đăng %{time_ago} trước"
+    invalid: "Bài viết không hợp lệ."
+    image_too_large: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
+    delete: "xóa"
+    delete_confirm: "Bạn có chắc chắn muốn xóa bài viết này không?"
