@@ -14,6 +14,7 @@ class Micropost < ApplicationRecord
                            message: :image_too_large}
 
   scope :recent, ->{order(created_at: :desc)}
+  scope :relate_post, ->(user_ids){where user_id: user_ids}
 
   has_one_attached :image do |attachable|
     attachable.variant :display, resize_to_limit: IMAGE_DISPLAY_SIZE

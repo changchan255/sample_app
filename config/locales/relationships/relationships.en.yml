@@ -1,0 +1,4 @@
+en:
+  relationships:
+    user_not_found: "User not found"
+    relationship_not_found: "Relationship not found"

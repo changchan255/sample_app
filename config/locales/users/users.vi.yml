@@ -28,3 +28,12 @@ vi:
     destroy:
       deleted: "Người dùng đã được xóa thành công."
       delete_failed: "Xóa người dùng không thành công."
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
+    show_follow:
+      microposts: "Bài viết: "
+      view_my_profile: "Xem hồ sơ của tôi"
+    following:
+      title: "Đang theo dõi"
+    followers:
+      title: "Người theo dõi"
